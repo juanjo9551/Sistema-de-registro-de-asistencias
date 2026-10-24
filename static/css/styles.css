@@ -1,0 +1,264 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  height: 100%;
+  background: linear-gradient(to top, #dde9ff, #ffffff);
+}
+
+nav {
+  background-color: #112257;
+  height: 80px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+nav li {
+  list-style-type: none;
+  height: 100%;
+  background-color: #112257;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+nav li:hover {
+  background-color: #223a91;
+  box-shadow: 0 0 5px 10px #0000000f;
+  z-index: 2;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgb(36, 77, 255);
+  width: 0%;
+  height: 5px;
+  transition: all 0.3 ease;
+}
+
+nav a::after:hover nav a::after {
+  width: 100%;
+}
+
+.section {
+  padding: 20px;
+}
+
+form {
+  padding: 20px;
+  border: 2px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+form > input,
+form > select {
+  margin-bottom: 20px;
+}
+
+form > label {
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.msg-respuesta {
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 50px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #112257;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e8ff;
+  cursor: pointer;
+}
+
+td {
+  color: #333;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #112257;
+  margin-bottom: 30px;
+}
+
+form.container {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form.container label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+}
+
+form.container input[type="text"],
+form.container input[type="date"],
+form.container select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+form.container input[type="text"]:focus,
+form.container input[type="date"]:focus,
+form.container select:focus {
+  border-color: #112257;
+  outline: none;
+}
+
+form.container input[type="submit"] {
+  margin-top: 20px;
+  background-color: #112257;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+form.container input[type="submit"]:hover {
+  background-color: #223a91;
+}
+
+.msg-error {
+  color: #a10000;
+  background-color: #ffc8c8;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #a10000;
+  border-radius: 5px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.msg-exito {
+  color: #0a640a;
+  background-color: #beffbe;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #0a640a;
+  border-radius: 5px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.msg-normal {
+  color: #8e8e8e;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #474747;
+  border-radius: 5px;
+  max-width: 600px;
+  text-align: center;
+}
+
+ul.general {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+
+ul.general li {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-left: 5px solid #112257;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
